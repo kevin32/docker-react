@@ -1,0 +1,9 @@
+sudo: required #wee need super level permissions
+services:
+  - docker
+
+before_install:
+  - docker build -t kevin32/docker-react -f Dockerfile.dev . #Getting back id
+
+script:
+  - docker run kevin32/docker-react npm run test -- --coverage #Lahkub skriptist kui tehtud
