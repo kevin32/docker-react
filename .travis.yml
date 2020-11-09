@@ -1,4 +1,3 @@
-sudo: required #wee need super level permissions
 services:
   - docker
 
