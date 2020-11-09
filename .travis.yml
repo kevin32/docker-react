@@ -6,4 +6,4 @@ before_install:
   - docker build -t kevin32/docker-react -f Dockerfile.dev . #Getting back id
 
 script:
-  - docker run kevin32/docker-react npm run test -- --coverage #Lahkub skriptist kui tehtud
+  - docker -e CI=true run kevin32/docker-react npm run test -- --coverage #Lahkub skriptist kui tehtud
